@@ -1,5 +1,6 @@
 This project processes a spreadsheet containing the Pokedex based on user input, and returns visualizations of type distribution across generations.
 
+-
 
 Types include:
 
