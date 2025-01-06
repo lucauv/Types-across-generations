@@ -1,4 +1,5 @@
 This project processes a spreadsheet containing the Pokedex based on user input, and returns visualizations of type distribution across generations.
+To execute, copy and paste the code from 'main/type_visualizer' into a Python IDE and run. Downloading the repo is not necessary.
 
 -
 
