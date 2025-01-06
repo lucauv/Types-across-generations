@@ -1,0 +1,23 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+file_path = 'https://github.com/lucauv/Types-across-generations/blob/main/dex.xlsx?raw=true'
+df = pd.read_excel(file_path, sheet_name='Pokedex')
+
+type = input('Choose a type to filter for: ').title()
+listw = []
+def getType():
+    for index, row in df.iterrows():
+        if row['Type I'] == type:
+            listw.append(row['Generation'])
+        elif row['Type II'] == type:
+            listw.append(row['Generation'])
+getType()
+
+range = (1, 9)
+bins = 9
+plt.hist(listw, bins=bins, range=range, histtype='bar', rwidth=0.8, color='Red')
+plt.xlabel('Generations')
+plt.ylabel(f'# of {type} Pokemon')
+plt.title(f'{type} Pokemon across Generations')
+plt.show()
